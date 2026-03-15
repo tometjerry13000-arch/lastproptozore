@@ -1282,7 +1282,7 @@ splitface: {
             "poses de statue vivante"
         ]
     }
-}
-
+},
+);
 // Vérification du nombre de personnages
 console.log(`✅ countries.js chargé avec ${Object.keys(countries).length} personnages`);
