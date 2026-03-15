@@ -199,4 +199,4 @@ supermanclassic: {
         part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
     }
 }
-}:
+
