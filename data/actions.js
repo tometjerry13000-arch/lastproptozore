@@ -482,6 +482,302 @@ const personnageActions = {
         ]
     },
     
+    // ==================== NOËL / PÈRE NOËL ====================
+    christmas: {
+        decors: [
+            {
+                nom: "🎄 Atelier du Père Noël",
+                description: "dans l'atelier du Père Noël, jouets partout, lutins qui travaillent, cadeaux emballés, ambiance magique de Noël"
+            },
+            {
+                nom: "🛷 Traîneau dans le ciel",
+                description: "sur le traîneau du Père Noël volant dans le ciel étoilé, rennes qui tirent, aurores boréales, ville illuminée en contrebas"
+            },
+            {
+                nom: "🔥 Cheminée décorée",
+                description: "devant une grande cheminée décorée de guirlandes, sapin de Noël illuminé, chaussettes suspendues, feu qui crépite"
+            },
+            {
+                nom: "❄️ Paysage enneigé",
+                description: "dans un paysage enneigé, sapins blancs, neige qui tombe, chalet traditionnel au loin, ambiance hivernale"
+            }
+        ],
+        actions: [
+            {
+                nom: "Distribution de cadeaux",
+                description: "elle distribue sensuellement des cadeaux autour d'elle, les offrant à la caméra avec un sourire coquin"
+            },
+            {
+                nom: "Jeu avec le bonnet",
+                description: "elle joue avec son bonnet de Père Noël, le mettant et l'enlevant de façon suggestive"
+            },
+            {
+                nom: "Danse près du sapin",
+                description: "elle danse sensuellement près du sapin décoré, jouant avec les guirlandes et les décorations"
+            },
+            {
+                nom: "Dégustation de pain d'épices",
+                description: "elle mord sensuellement dans un pain d'épices en forme de bonhomme, léchant ses doigts avec gourmandise"
+            }
+        ]
+    },
+
+    // ==================== SORCIÈRES ====================
+    witch: {
+        decors: [
+            {
+                nom: "🔮 Repaire de sorcière",
+                description: "dans un repaire de sorcière, bougies, potions qui bouillonnent, livres de sorts anciens, ambiance mystique"
+            },
+            {
+                nom: "🌕 Clairière enchantée",
+                description: "dans une clairière au clair de lune, cercle de champignons, lucioles, brume légère, ambiance magique"
+            },
+            {
+                nom: "🏚️ Cabane dans les bois",
+                description: "dans une cabane isolée dans les bois, plantes séchées au plafond, chaudron, ambiance ensorcelante"
+            }
+        ],
+        actions: [
+            {
+                nom: "Sortilège d'amour",
+                description: "elle prépare une potion d'amour, gestes lents et sensuels, ingrédients qui brillent"
+            },
+            {
+                nom: "Incantation",
+                description: "elle récite une incantation, mains qui tracent des symboles dans l'air, énergie magique qui l'entoure"
+            },
+            {
+                nom: "Danse des ombres",
+                description: "elle danse avec les ombres projetées, silhouettes mouvantes, jeu de lumière sensuel"
+            }
+        ]
+    },
+
+    // ==================== MILITAIRE ====================
+    military: {
+        decors: [
+            {
+                nom: "🎖️ Base militaire",
+                description: "dans une base militaire, véhicules tactiques, projecteurs, ambiance opérationnelle"
+            },
+            {
+                nom: "🌃 Zone de combat urbain",
+                description: "dans une zone de combat urbaine, bâtiments détruits, fumée, éclairs de tirs au loin"
+            },
+            {
+                nom: "🚁 Héliport",
+                description: "sur un héliport, hélicoptère en arrière-plan, vents puissants, ambiance d'intervention"
+            }
+        ],
+        actions: [
+            {
+                nom: "Opération séduction",
+                description: "en tenue tactique, elle effectue des mouvements de combat stylisés, arme factice sensuellement tenue"
+            },
+            {
+                nom: "Planque",
+                description: "cachée derrière un mur, elle guette, puis se révèle dans un mouvement sensuel"
+            },
+            {
+                nom: "Danse commando",
+                description: "chorégraphie inspirée des mouvements tactiques, roulades sensuelles, poses de tireur d'élite"
+            }
+        ]
+    },
+
+    // ==================== POMPIER ====================
+    firefighter: {
+        decors: [
+            {
+                nom: "🚒 Caserne de pompiers",
+                description: "dans une caserne de pompiers, camion rouge, tenues accrochées, ambiance professionnelle"
+            },
+            {
+                nom: "🔥 Incendie maîtrisé",
+                description: "sur les lieux d'un incendie maîtrisé, fumée résiduelle, lueurs des flammes, ambiance héroïque"
+            },
+            {
+                nom: "🧯 Poste de secours",
+                description: "dans un poste de secours, matériel d'intervention, lumières d'urgence, ambiance de sauvetage"
+            }
+        ],
+        actions: [
+            {
+                nom: "Sauvetage sensuel",
+                description: "elle porte une victime imaginaire, gestes protecteurs et sensuels, regard déterminé"
+            },
+            {
+                nom: "Danse de la lance",
+                description: "elle manie la lance à incendie comme accessoire de danse, mouvements d'eau sensuels"
+            },
+            {
+                nom: "Intervention",
+                description: "elle enfile son équipement de façon sensuelle, casque, gants, gestes lents et précis"
+            }
+        ]
+    },
+
+    // ==================== POLICE ====================
+    police: {
+        decors: [
+            {
+                nom: "🚓 Commissariat",
+                description: "dans un commissariat, cellules, bureaux, écrans de surveillance, ambiance d'autorité"
+            },
+            {
+                nom: "🌃 Ruelle sombre",
+                description: "dans une ruelle sombre, lampadaires, gyrophares au loin, ambiance dangereuse"
+            },
+            {
+                nom: "🚔 Contrôle routier",
+                description: "lors d'un contrôle routier de nuit, voiture de police, cônes, lumières bleues"
+            }
+        ],
+        actions: [
+            {
+                nom: "Arrestation sensuelle",
+                description: "elle passe les menottes à un suspect imaginaire, gestes lents et dominants"
+            },
+            {
+                nom: "Danse d'autorité",
+                description: "chorégraphie d'intervention, gestes autoritaires et sensuels, regard perçant"
+            },
+            {
+                nom: "Planque",
+                description: "cachée, elle observe, puis se révèle dans un mouvement de séduction"
+            }
+        ]
+    },
+
+    // ==================== ZOMBIE / APOCALYPSE ====================
+    zombie: {
+        decors: [
+            {
+                nom: "💀 Ville en ruines",
+                description: "dans une ville post-apocalyptique, immeubles effondrés, voitures brûlées, végétation qui reprend ses droits"
+            },
+            {
+                nom: "🔥 Camp de survivants",
+                description: "dans un camp de survivants, feux de camp, barbelés, tentes de fortune, ambiance de survie"
+            },
+            {
+                nom: "🧟 Zone infectée",
+                description: "dans une zone contaminée, symboles biohazard, brume toxique, silence angoissant"
+            }
+        ],
+        actions: [
+            {
+                nom: "Danse de survie",
+                description: "mouvements de combat contre les infectés, chorégraphie guerrière et sensuelle"
+            },
+            {
+                nom: "Rituel apocalyptique",
+                description: "danse rituelle autour du feu, ombres dansantes, ambiance de fin du monde"
+            },
+            {
+                nom: "Chasseuse",
+                description: "elle traque une proie imaginaire, mouvements félins, arme à la main, regard déterminé"
+            }
+        ]
+    },
+
+    // ==================== CIRQUE ====================
+    circus: {
+        decors: [
+            {
+                nom: "🎪 Chapiteau",
+                description: "sous un chapiteau de cirque, projecteurs colorés, piste aux étoiles, gradins avec public"
+            },
+            {
+                nom: "🎭 Coulisses",
+                description: "dans les coulisses du cirque, miroirs de maquillage, costumes suspendus, ambiance féerique"
+            },
+            {
+                nom: "🤹 Scène de cirque",
+                description: "sur la scène du cirque, cerceaux, ballons, accessoires de jonglage, ambiance festive"
+            }
+        ],
+        actions: [
+            {
+                nom: "Trapéziste",
+                description: "elle danse comme une trapéziste, mouvements aériens, grâce et souplesse"
+            },
+            {
+                nom: "Jongleuse sensuelle",
+                description: "elle jongle avec des balles lumineuses, mouvements circulaires des hanches en rythme"
+            },
+            {
+                nom: "Dompteuse",
+                description: "elle dompte une bête imaginaire, gestes d'autorité et de séduction, fouet sensuel"
+            }
+        ]
+    },
+
+    // ==================== VITILIGO / TACHES DE NAISSANCE ====================
+    vitiligo: {
+        decors: [
+            {
+                nom: "🎨 Studio d'art",
+                description: "dans un studio d'art, toiles colorées, lumières tamisées, ambiance créative qui sublime la beauté naturelle"
+            },
+            {
+                nom: "✨ Fond épuré",
+                description: "devant un fond blanc épuré, éclairage doux qui met en valeur les taches de naissance"
+            },
+            {
+                nom: "🖼️ Galerie d'art",
+                description: "dans une galerie d'art, murs blancs, œuvres contemporaines, ambiance chic et éditoriale"
+            }
+        ],
+        actions: [
+            {
+                nom: "Célébration de la peau",
+                description: "elle caresse sensuellement sa peau, mettant en valeur ses taches de naissance avec fierté"
+            },
+            {
+                nom: "Jeu de lumière",
+                description: "elle joue avec les lumières qui révèlent et subliment les motifs naturels de sa peau"
+            },
+            {
+                nom: "Pose éditoriale",
+                description: "poses de mannequin qui mettent en avant l'unicité et la beauté de ses taches"
+            }
+        ]
+    },
+
+    // ==================== SPLIT-FACE / DUOCHROME ====================
+    splitface: {
+        decors: [
+            {
+                nom: "🎭 Studio split",
+                description: "studio avec éclairage bicolore, rose à gauche, cyan à droite, séparation parfaite au milieu"
+            },
+            {
+                nom: "🪞 Miroir infini",
+                description: "dans une pièce de miroirs, reflets infinis, jeu de symétrie et de couleurs"
+            },
+            {
+                nom: "🌈 Fond duochrome",
+                description: "devant un fond abstrait aux couleurs contrastées, ambiance graphique et moderne"
+            }
+        ],
+        actions: [
+            {
+                nom: "Symétrie parfaite",
+                description: "mouvements parfaitement symétriques qui jouent avec la séparation des couleurs"
+            },
+            {
+                nom: "Jeu de miroir",
+                description: "elle danse face à un miroir, jouant avec son reflet et la dualité des couleurs"
+            },
+            {
+                nom: "Métamorphose",
+                description: "mouvements qui semblent faire passer les couleurs d'un côté à l'autre du visage"
+            }
+        ]
+    },
+
     // ==================== DÉFAUT POUR TOUS LES AUTRES ====================
     default: {
         decors: [
