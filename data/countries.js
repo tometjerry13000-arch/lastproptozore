@@ -1234,9 +1234,6 @@ const countries = {
             part1: ["mouvements acrobatiques", "poses de trapéziste"],
             part2: ["danse aérienne", "jeux avec le cerceau"]
         }
-    
-    
-
 };
 
 // Vérification du nombre de personnages
