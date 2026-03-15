@@ -199,7 +199,6 @@
             part2: ["danse contemporaine", "mouvements expressifs", "célébration de l'unicité", "poses de fierté"]
         }
     },
-// ==================== SUPERMAN CLASSIQUE ====================
 
     // ==================== SPLIT-FACE ====================
     splitface: {
@@ -237,4 +236,4 @@ supermanclassic: {
         part1: ["poses de super-héros", "mouvements puissants", "regards déterminés"],
         part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
     }
-},
+}
