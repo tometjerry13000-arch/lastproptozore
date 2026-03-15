@@ -1201,7 +1201,85 @@ const countries = {
         type: "default",
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
-        palmColors: { left: "#ff1493", right: "#ffd700" },
+        palm// ==================== NOUVEAUX PERSONNAGES TRENDY ====================
+
+vitiligo: {
+    type: "default",
+    name: "🎨 Vitiligo Black",
+    dance: "Danse Tachetée",
+    palmColors: { left: "#8B4513", right: "#F5F5DC" },
+    finalOutfit: {
+        description: "tenue élégante qui met en valeur la peau tachetée",
+        colors: ["noir", "beige", "or rose"],
+        elements: [
+            "body moulant en dentelle noire",
+            "jupe longue fendue en satin beige",
+            "gants en résille",
+            "bottes à talons"
+        ],
+        accessories: [
+            "collier fin en or rose",
+            "boucles d'oreilles perles",
+            "maquillage naturel qui sublime les taches",
+            "bracelets fins superposés"
+        ]
+    },
+    hairFluo: ["blanc", "argent", "rose poudré", "lavande"],
+    background: "studio d'art, lumières douves, murs texturés, ambiance éditorial mode",
+    danceMoves: {
+        part1: [
+            "mouvements fluides mettant en valeur la peau",
+            "poses artistiques",
+            "jeux de lumière sur les taches",
+            "regards profonds"
+        ],
+        part2: [
+            "danse contemporaine",
+            "mouvements expressifs",
+            "célébration de l'unicité",
+            "poses de fierté"
+        ]
+    }
+},
+
+splitface: {
+    type: "default",
+    name: "♿ Split-Face Duochrome",
+    dance: "Danse Symétrique",
+    palmColors: { left: "#FF1493", right: "#00CED1" },
+    finalOutfit: {
+        description: "tenue bicolore asymétrique haut couture",
+        colors: ["rose fuchsia", "turquoise", "noir"],
+        elements: [
+            "body moulant bicolore avec séparation parfaite au milieu",
+            "bottes dépareillées (une rose, une turquoise)",
+            "gants longs assortis",
+            "cape légère bicolore"
+        ],
+        accessories: [
+            "collier chaîne bicolore",
+            "boucles d'oreilles dépareillées",
+            "maquillage split-face parfait",
+            "épingles à cheveux colorées"
+        ]
+    },
+    hairFluo: ["rose fluo", "cyan", "violet", "bleu électrique"],
+    background: "studio minimaliste, éclairage split (rose à gauche, cyan à droite), sol miroir",
+    danceMoves: {
+        part1: [
+            "mouvements symétriques parfaits",
+            "jeux de contraste des couleurs",
+            "poses équilibrées",
+            "regards magnétiques"
+        ],
+        part2: [
+            "danse miroir",
+            "mouvements dédoublés",
+            "effet de symétrie corporelle",
+            "poses de statue vivante"
+        ]
+    }
+}Colors: { left: "#ff1493", right: "#ffd700" },
         finalOutfit: {
             description: "tenue d'acrobate de cirque",
             colors: ["rose fuchsia", "or", "rouge"],
@@ -1215,6 +1293,9 @@ const countries = {
             part2: ["danse aérienne", "jeux avec le cerceau"]
         }
     }
+
+
+    
 };
 
 // Vérification du nombre de personnages
