@@ -198,4 +198,5 @@ supermanclassic: {
         part1: ["poses de super-héros", "mouvements puissants", "regards déterminés"],
         part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
     }
-},
+}
+}:
