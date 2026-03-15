@@ -236,4 +236,4 @@ supermanclassic: {
             part1: ["mouvements symétriques parfaits", "jeux de contraste des couleurs", "poses équilibrées", "regards magnétiques"],
             part2: ["danse miroir", "mouvements dédoublés", "effet de symétrie corporelle", "poses de statue vivante"]
         }
-    }
+    },
