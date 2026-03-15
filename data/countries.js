@@ -199,7 +199,25 @@
             part2: ["danse contemporaine", "mouvements expressifs", "célébration de l'unicité", "poses de fierté"]
         }
     },
-
+// ==================== SUPERMAN CLASSIQUE ====================
+supermanclassic: {
+    type: "superman",
+    name: "🦸 Superman Classique",
+    dance: "Danse Héroïque",
+    palmColors: { left: "#ff0000", right: "#0000ff" },
+    finalOutfit: {
+        description: "costume de Superman iconique revisité",
+        colors: ["rouge", "bleu", "jaune"],
+        elements: ["justaucorps moulant rouge et bleu", "cape rouge flottante", "bottes rouges", "ceinture jaune"],
+        accessories: ["logo S sur la poitrine", "cape de super-héros", "bracelets rouges"]
+    },
+    hairFluo: ["noir", "bleu", "rouge"],
+    background: "toit de gratte-ciel la nuit, ville illuminée, éclairs, lune pleine",
+    danceMoves: {
+        part1: ["poses de super-héros", "mouvements puissants", "regards déterminés"],
+        part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
+    }
+},
     // ==================== SPLIT-FACE ====================
     splitface: {
         type: "splitface",
