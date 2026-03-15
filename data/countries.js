@@ -1201,9 +1201,21 @@ const countries = {
         type: "default",
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
-        palm// ==================== NOUVEAUX PERSONNAGES TRENDY ====================
+        palmColors: { left: "#ff1493", right: "#ffd700" },
+        finalOutfit: {
+            description: "tenue d'acrobate de cirque",
+            colors: ["rose fuchsia", "or", "rouge"],
+            elements: ["justaucorps pailleté", "collants résille", "chaussons de danse", "cape légère"],
+            accessories: ["cerceau aérien", "pompons", "maquillage de scène", "confettis"]
+        },
+        hairFluo: ["rose", "or", "rouge"],
+        background: "chapiteau de cirque, projecteurs, trapèzes, public",
+        danceMoves: {
+            part1: ["mouvements acrobatiques", "poses de trapéziste"],
+            part2: ["danse aérienne", "jeux avec le cerceau"]
         }
     }
-);
+};
+
 // Vérification du nombre de personnages
 console.log(`✅ countries.js chargé avec ${Object.keys(countries).length} personnages`);
