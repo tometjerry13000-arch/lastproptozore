@@ -459,7 +459,7 @@ const countries = {
 
     // ==================== SORCIÈRES (2) ====================
     witchreal: {
-        type: "witch",
+        type: "default",
         name: "🧙 Sorcière",
         dance: "Danse Ensorcelante",
         palmColors: { left: "#4b0082", right: "#000000" },
@@ -478,7 +478,7 @@ const countries = {
     },
     
     witchenchant: {
-        type: "witch",
+        type: "default",
         name: "🧙 Sorcière Envoûteuse",
         dance: "Danse de Sortilège",
         palmColors: { left: "#663399", right: "#228b22" },
@@ -570,26 +570,6 @@ const countries = {
         danceMoves: {
             part1: ["mouvements de combat", "poses guerrières"],
             part2: ["danse de victoire", "enchaînements martiaux"]
-        }
-    },
-
-    // ==================== SUPERMAN CLASSIQUE (NOUVEAU) ====================
-    supermanclassic: {
-        type: "superman",
-        name: "🦸 Superman Classique",
-        dance: "Danse Héroïque",
-        palmColors: { left: "#ff0000", right: "#0000ff" },
-        finalOutfit: {
-            description: "costume de Superman iconique revisité",
-            colors: ["rouge", "bleu", "jaune"],
-            elements: ["justaucorps moulant rouge et bleu", "cape rouge flottante", "bottes rouges", "ceinture jaune"],
-            accessories: ["logo S sur la poitrine", "cape de super-héros", "bracelets rouges"]
-        },
-        hairFluo: ["noir", "bleu", "rouge"],
-        background: "toit de gratte-ciel la nuit, ville illuminée, éclairs, lune pleine",
-        danceMoves: {
-            part1: ["poses de super-héros", "mouvements puissants", "regards déterminés"],
-            part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
         }
     },
 
@@ -711,7 +691,7 @@ const countries = {
 
     // ==================== FÊTES & COSTUMES (7) ====================
     santasexy: {
-        type: "christmas",
+        type: "default",
         name: "🎅 Père Noël",
         dance: "Danse de Noël",
         palmColors: { left: "#ff0000", right: "#ffffff" },
@@ -730,7 +710,7 @@ const countries = {
     },
     
     elfsexy: {
-        type: "christmas",
+        type: "elf",
         name: "🧝 Lutin",
         dance: "Danse des Lutins",
         palmColors: { left: "#00ff00", right: "#ff0000" },
@@ -845,7 +825,7 @@ const countries = {
 
     // ==================== MILITAIRE (1) ====================
     specialforces: {
-        type: "military",
+        type: "default",
         name: "🔫 Forces Spéciales",
         dance: "Danse Commando",
         palmColors: { left: "#2d5a27", right: "#8b4513" },
@@ -865,7 +845,7 @@ const countries = {
 
     // ==================== POMPIER ====================
     firefighter: {
-        type: "firefighter",
+        type: "default",
         name: "🚒 Pompier",
         dance: "Danse du Feu",
         palmColors: { left: "#ff0000", right: "#ffff00" },
@@ -885,7 +865,7 @@ const countries = {
 
     // ==================== POLICIER ====================
     police: {
-        type: "police",
+        type: "default",
         name: "👮 Police",
         dance: "Danse de l'Intervention",
         palmColors: { left: "#0000ff", right: "#ffffff" },
@@ -925,7 +905,7 @@ const countries = {
 
     // ==================== APOCALYPSE (1) ====================
     zombie: {
-        type: "zombie",
+        type: "default",
         name: "🧟 Zombie",
         dance: "Danse Macabre",
         palmColors: { left: "#228b22", right: "#8b0000" },
@@ -1218,7 +1198,7 @@ const countries = {
     },
     
     circus: {
-        type: "circus",
+        type: "default",
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
         palmColors: { left: "#ff1493", right: "#ffd700" },
@@ -1233,46 +1213,6 @@ const countries = {
         danceMoves: {
             part1: ["mouvements acrobatiques", "poses de trapéziste"],
             part2: ["danse aérienne", "jeux avec le cerceau"]
-        }
-    },
-    
-    // ==================== VITILIGO ====================
-    vitiligo: {
-        type: "vitiligo",
-        name: "🎨 Vitiligo Black",
-        dance: "Danse Tachetée",
-        palmColors: { left: "#8B4513", right: "#F5F5DC" },
-        finalOutfit: {
-            description: "tenue élégante qui met en valeur la peau tachetée",
-            colors: ["noir", "beige", "or rose"],
-            elements: ["body moulant en dentelle noire", "jupe longue fendue en satin beige", "gants en résille", "bottes à talons"],
-            accessories: ["collier fin en or rose", "boucles d'oreilles perles", "maquillage naturel qui sublime les taches", "bracelets fins superposés"]
-        },
-        hairFluo: ["blanc", "argent", "rose poudré", "lavande"],
-        background: "studio d'art, lumières douves, murs texturés, ambiance éditorial mode",
-        danceMoves: {
-            part1: ["mouvements fluides mettant en valeur la peau", "poses artistiques", "jeux de lumière sur les taches", "regards profonds"],
-            part2: ["danse contemporaine", "mouvements expressifs", "célébration de l'unicité", "poses de fierté"]
-        }
-    },
-
-    // ==================== SPLIT-FACE ====================
-    splitface: {
-        type: "splitface",
-        name: "♿ Split-Face Duochrome",
-        dance: "Danse Symétrique",
-        palmColors: { left: "#FF1493", right: "#00CED1" },
-        finalOutfit: {
-            description: "tenue bicolore asymétrique haut couture",
-            colors: ["rose fuchsia", "turquoise", "noir"],
-            elements: ["body moulant bicolore avec séparation parfaite au milieu", "bottes dépareillées (une rose, une turquoise)", "gants longs assortis", "cape légère bicolore"],
-            accessories: ["collier chaîne bicolore", "boucles d'oreilles dépareillées", "maquillage split-face parfait", "épingles à cheveux colorées"]
-        },
-        hairFluo: ["rose fluo", "cyan", "violet", "bleu électrique"],
-        background: "studio minimaliste, éclairage split (rose à gauche, cyan à droite), sol miroir",
-        danceMoves: {
-            part1: ["mouvements symétriques parfaits", "jeux de contraste des couleurs", "poses équilibrées", "regards magnétiques"],
-            part2: ["danse miroir", "mouvements dédoublés", "effet de symétrie corporelle", "poses de statue vivante"]
         }
     }
 };
