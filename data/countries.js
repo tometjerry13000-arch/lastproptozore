@@ -459,7 +459,7 @@ const countries = {
 
     // ==================== SORCIÈRES (2) ====================
     witchreal: {
-        type: "default",
+        type: "witch",
         name: "🧙 Sorcière",
         dance: "Danse Ensorcelante",
         palmColors: { left: "#4b0082", right: "#000000" },
@@ -478,7 +478,7 @@ const countries = {
     },
     
     witchenchant: {
-        type: "default",
+        type: "witch",
         name: "🧙 Sorcière Envoûteuse",
         dance: "Danse de Sortilège",
         palmColors: { left: "#663399", right: "#228b22" },
@@ -570,6 +570,26 @@ const countries = {
         danceMoves: {
             part1: ["mouvements de combat", "poses guerrières"],
             part2: ["danse de victoire", "enchaînements martiaux"]
+        }
+    },
+
+    // ==================== SUPERMAN CLASSIQUE (NOUVEAU) ====================
+    supermanclassic: {
+        type: "superman",
+        name: "🦸 Superman Classique",
+        dance: "Danse Héroïque",
+        palmColors: { left: "#ff0000", right: "#0000ff" },
+        finalOutfit: {
+            description: "costume de Superman iconique revisité",
+            colors: ["rouge", "bleu", "jaune"],
+            elements: ["justaucorps moulant rouge et bleu", "cape rouge flottante", "bottes rouges", "ceinture jaune"],
+            accessories: ["logo S sur la poitrine", "cape de super-héros", "bracelets rouges"]
+        },
+        hairFluo: ["noir", "bleu", "rouge"],
+        background: "toit de gratte-ciel la nuit, ville illuminée, éclairs, lune pleine",
+        danceMoves: {
+            part1: ["poses de super-héros", "mouvements puissants", "regards déterminés"],
+            part2: ["vol stylisé", "combat chorégraphié", "atterrissage de super-héros"]
         }
     },
 
@@ -691,7 +711,7 @@ const countries = {
 
     // ==================== FÊTES & COSTUMES (7) ====================
     santasexy: {
-        type: "default",
+        type: "christmas",
         name: "🎅 Père Noël",
         dance: "Danse de Noël",
         palmColors: { left: "#ff0000", right: "#ffffff" },
@@ -710,7 +730,7 @@ const countries = {
     },
     
     elfsexy: {
-        type: "elf",
+        type: "christmas",
         name: "🧝 Lutin",
         dance: "Danse des Lutins",
         palmColors: { left: "#00ff00", right: "#ff0000" },
@@ -825,7 +845,7 @@ const countries = {
 
     // ==================== MILITAIRE (1) ====================
     specialforces: {
-        type: "default",
+        type: "military",
         name: "🔫 Forces Spéciales",
         dance: "Danse Commando",
         palmColors: { left: "#2d5a27", right: "#8b4513" },
@@ -845,7 +865,7 @@ const countries = {
 
     // ==================== POMPIER ====================
     firefighter: {
-        type: "default",
+        type: "firefighter",
         name: "🚒 Pompier",
         dance: "Danse du Feu",
         palmColors: { left: "#ff0000", right: "#ffff00" },
@@ -865,7 +885,7 @@ const countries = {
 
     // ==================== POLICIER ====================
     police: {
-        type: "default",
+        type: "police",
         name: "👮 Police",
         dance: "Danse de l'Intervention",
         palmColors: { left: "#0000ff", right: "#ffffff" },
@@ -905,7 +925,7 @@ const countries = {
 
     // ==================== APOCALYPSE (1) ====================
     zombie: {
-        type: "default",
+        type: "zombie",
         name: "🧟 Zombie",
         dance: "Danse Macabre",
         palmColors: { left: "#228b22", right: "#8b0000" },
@@ -1198,7 +1218,7 @@ const countries = {
     },
     
     circus: {
-        type: "default",
+        type: "circus",
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
         palmColors: { left: "#ff1493", right: "#ffd700" },
@@ -1214,7 +1234,9 @@ const countries = {
             part1: ["mouvements acrobatiques", "poses de trapéziste"],
             part2: ["danse aérienne", "jeux avec le cerceau"]
         }
-    }
+    
+    
+
 };
 
 // Vérification du nombre de personnages
