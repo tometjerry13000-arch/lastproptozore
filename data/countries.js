@@ -1203,6 +1203,9 @@ const countries = {
         dance: "Danse du Cirque",
         palm// ==================== NOUVEAUX PERSONNAGES TRENDY ====================
 
+// ==================== NOUVEAUX PERSONNAGES TRENDY ====================
+// À PLACER À LA FIN, AVANT LE console.log
+
 vitiligo: {
     type: "default",
     name: "🎨 Vitiligo Black",
@@ -1279,21 +1282,7 @@ splitface: {
             "poses de statue vivante"
         ]
     }
-}Colors: { left: "#ff1493", right: "#ffd700" },
-        finalOutfit: {
-            description: "tenue d'acrobate de cirque",
-            colors: ["rose fuchsia", "or", "rouge"],
-            elements: ["justaucorps pailleté", "collants résille", "chaussons de danse", "cape légère"],
-            accessories: ["cerceau aérien", "pompons", "maquillage de scène", "confettis"]
-        },
-        hairFluo: ["rose", "or", "rouge"],
-        background: "chapiteau de cirque, projecteurs, trapèzes, public",
-        danceMoves: {
-            part1: ["mouvements acrobatiques", "poses de trapéziste"],
-            part2: ["danse aérienne", "jeux avec le cerceau"]
-        }
-    }
-
+}
 
     
 };
