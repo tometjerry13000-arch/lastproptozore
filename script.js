@@ -1,4 +1,4 @@
-// script.js - Version ULTIME avec TOUS les effets - Visage 8K - Transition naturelle
+// script.js - Version ULTIME avec TOUS les effets - TABLEAUX ALIEN COMPLETS
 
 console.log("🚀 Chargement de script.js...");
 
@@ -63,7 +63,7 @@ class PromptGenerator {
         return "elle danse sensuellement face caméra";
     }
 
-    // ===== DÉCOR UNIFIÉ (PAS DE DOUBLON) =====
+    // ===== DÉCOR UNIFIÉ =====
     getUnifiedDecor() {
         const selected = document.querySelector('.character-card.selected');
         if (!selected) return "studio professionnel";
@@ -71,21 +71,18 @@ class PromptGenerator {
         const countryKey = selected.dataset.country;
         const country = countries[countryKey];
         
-        // PRIORITÉ 1: Décor personnalisé
         const customEnabled = document.getElementById('enableCustomDecor')?.checked || false;
         const customText = document.getElementById('customDecorText')?.value || '';
         if (customEnabled && customText.trim() !== '') {
             return customText.trim();
         }
         
-        // PRIORITÉ 2: Décor aléatoire du type de personnage
         const actionType = this.getActionType(countryKey);
         const randomDecor = this.getRandomDecor(actionType);
         if (randomDecor && randomDecor !== "studio professionnel") {
             return randomDecor;
         }
         
-        // PRIORITÉ 3: Background du pays
         if (country && country.background) {
             return country.background;
         }
@@ -182,7 +179,7 @@ class PromptGenerator {
         return interactions[interaction] || interactions['regard'];
     }
 
-    // ===== SCRIPT DU PERSONNAGE (REMPLACE MUSIQUE) =====
+    // ===== SCRIPT DU PERSONNAGE =====
     generateScript() {
         if (!document.getElementById('enableScript')?.checked) return '';
         
@@ -254,7 +251,7 @@ class PromptGenerator {
 - Ils apparaissent de façon magique et créent une ambiance immersive`;
     }
 
-    // ===== MODE ALIEN (OPTIONS INDIVIDUELLES) =====
+    // ===== MODE ALIEN (TABLEAU COMPLET) =====
     generateAlienTransformations() {
         if (!document.getElementById('enableAlienMode')?.checked) return '';
         
@@ -276,10 +273,11 @@ class PromptGenerator {
         if (document.getElementById('alienAntenna')?.checked) {
             const style = document.getElementById('antennaStyle')?.value || 'antennes';
             const styleText = {
-                'antennes': 'Antennes fines',
-                'cornes': 'Cornes stylisées',
-                'couronne': 'Couronne lumineuse',
-                'halo': 'Halo de lumière'
+                'antennes': 'Antennes fines (insectoïdes)',
+                'cornes': 'Cornes stylisées (démoniaques)',
+                'couronne': 'Couronne lumineuse (angélique)',
+                'halo': 'Halo de lumière (surnaturel)',
+                'tentacules': 'Tentacules (cthulhu)'
             }[style] || 'Antennes';
             alienText += `- ${styleText} sur la tête, qui pulsent en rythme (DÉJÀ PRÉSENTES)\n`;
             hasFeatures = true;
@@ -303,7 +301,8 @@ class PromptGenerator {
                 'etoiles': 'étoiles filantes',
                 'planetes': 'planètes miniatures',
                 'symboles': 'symboles mystiques',
-                'energie': 'sphères d\'énergie'
+                'energie': 'sphères d\'énergie',
+                'animaux': 'créatures holographiques'
             }[type] || 'hologrammes';
             alienText += `- Hologrammes flottants : des ${typeText} apparaissent et dansent autour d'elle (DÉJÀ PRÉSENTS)\n`;
             hasFeatures = true;
@@ -327,21 +326,21 @@ class PromptGenerator {
         return hasFeatures ? alienText : '';
     }
 
-    // ===== MODE AVATAR (CHOIX CONSERVER VISAGE OU PEAU BLEUE) =====
+    // ===== MODE AVATAR (AVEC CHOIX GARDER VISAGE) =====
     generateAvatarTransformations() {
         if (!document.getElementById('enableAvatarMode')?.checked) return '';
         
         let avatarText = '\n\n🔵 TRANSFORMATIONS AVATAR (NA\'VI) - DÉJÀ ACCOMPLIES :\n';
         
-        const fullBody = document.getElementById('avatarFullBody')?.checked || false;
         const keepFace = document.getElementById('avatarKeepFace')?.checked || false;
         
-        if (fullBody) {
-            if (keepFace) {
-                avatarText += `- Corps transformé en Na'vi (peau bleue, morphologie alien) mais VISAGE HUMAIN CONSERVÉ - strictement identique à l'image de référence (mêmes traits, mêmes imperfections, mêmes yeux 8K)\n`;
-            } else {
-                avatarText += `- Corps ET visage transformés en Na'vi : peau bleue caractéristique, oreilles pointues, morphologie humanoïde mais extraterrestre\n`;
-            }
+        if (keepFace) {
+            avatarText += `- ⚠️ VISAGE HUMAIN CONSERVÉ : le visage reste STRICTEMENT IDENTIQUE à l'image de référence (mêmes traits, mêmes pores, mêmes yeux 8K). Seul le corps est transformé en Na'vi.\n`;
+        }
+        
+        if (document.getElementById('avatarFullBody')?.checked) {
+            const skinTone = document.getElementById('avatarSkinTone')?.value || 'bleu nuit';
+            avatarText += `- Corps Na'vi complet : peau ${skinTone}, morphologie élancée, caractéristiques alien\n`;
         }
         
         if (document.getElementById('avatarEars')?.checked) {
@@ -349,11 +348,22 @@ class PromptGenerator {
         }
         
         if (document.getElementById('avatarTail')?.checked) {
-            avatarText += `- Queue fine et expressive\n`;
+            const tailStyle = document.getElementById('avatarTailStyle')?.value || 'fine';
+            avatarText += `- Queue ${tailStyle} et expressive\n`;
         }
         
         if (document.getElementById('avatarStripes')?.checked) {
-            avatarText += `- Rayures lumineuses bioluminescentes sur le corps\n`;
+            const stripeStyle = document.getElementById('avatarStripesStyle')?.value || 'fines';
+            const stripeColor = document.getElementById('avatarStripesColor')?.value || 'blanc';
+            avatarText += `- Rayures lumineuses ${stripeStyle} de couleur ${stripeColor}\n`;
+        }
+        
+        if (document.getElementById('avatarBioluminescence')?.checked) {
+            avatarText += `- Points bioluminescents sur tout le corps qui s'illuminent dans l'obscurité\n`;
+        }
+        
+        if (document.getElementById('avatarTattoos')?.checked) {
+            avatarText += `- Peintures tribales Na'vi sur le visage et le corps\n`;
         }
         
         return avatarText;
@@ -958,7 +968,7 @@ function updateRecap() {
 // ==================== GESTION DES OPTIONS CONDITIONNELLES ====================
 
 function setupConditionalOptions() {
-    // Mode Alien - afficher les options seulement si la case est cochée
+    // Mode Alien
     const alienSkin = document.getElementById('alienSkin');
     const alienEyes = document.getElementById('alienEyes');
     const alienAntenna = document.getElementById('alienAntenna');
@@ -968,47 +978,71 @@ function setupConditionalOptions() {
     
     if (alienSkin) {
         alienSkin.addEventListener('change', function() {
-            document.getElementById('alienSkinOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienSkinOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     if (alienEyes) {
         alienEyes.addEventListener('change', function() {
-            document.getElementById('alienEyesOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienEyesOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     if (alienAntenna) {
         alienAntenna.addEventListener('change', function() {
-            document.getElementById('alienAntennaOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienAntennaOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     if (alienGlow) {
         alienGlow.addEventListener('change', function() {
-            document.getElementById('alienGlowOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienGlowOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     if (alienTattoos) {
         alienTattoos.addEventListener('change', function() {
-            document.getElementById('alienTattoosOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienTattoosOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     if (alienHolograms) {
         alienHolograms.addEventListener('change', function() {
-            document.getElementById('alienHologramsOptions').style.display = this.checked ? 'block' : 'none';
+            const options = document.getElementById('alienHologramsOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
         });
     }
     
     // Mode Avatar
-    const avatarFullBody = document.getElementById('avatarFullBody');
-    const avatarKeepFace = document.getElementById('avatarKeepFace');
+    const avatarTail = document.getElementById('avatarTail');
+    const avatarStripes = document.getElementById('avatarStripes');
     
-    if (avatarFullBody && avatarKeepFace) {
+    if (avatarTail) {
+        avatarTail.addEventListener('change', function() {
+            const options = document.getElementById('avatarTailOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
+        });
+    }
+    
+    if (avatarStripes) {
+        avatarStripes.addEventListener('change', function() {
+            const options = document.getElementById('avatarStripesOptions');
+            if (options) options.style.display = this.checked ? 'block' : 'none';
+        });
+    }
+    
+    // Avatar Keep Face - vérification que le corps est coché
+    const avatarKeepFace = document.getElementById('avatarKeepFace');
+    const avatarFullBody = document.getElementById('avatarFullBody');
+    
+    if (avatarKeepFace && avatarFullBody) {
         avatarKeepFace.addEventListener('change', function() {
-            if (this.checked) {
+            if (this.checked && !avatarFullBody.checked) {
                 avatarFullBody.checked = true;
             }
         });
@@ -1172,4 +1206,4 @@ window.initCharacters = initCharacters;
 window.displayPrompt = displayPrompt;
 window.updateRecap = updateRecap;
 
-console.log("📦 script.js chargé avec TOUS les effets (textes magiques, alien, avatar, script, visage 8K)");
+console.log("📦 script.js chargé avec TOUS les effets - TABLEAUX ALIEN COMPLETS");
