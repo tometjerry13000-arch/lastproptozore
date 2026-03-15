@@ -1202,7 +1202,7 @@ const countries = {
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
         palm// ==================== NOUVEAUX PERSONNAGES TRENDY ====================
-
+ },
 // ==================== NOUVEAUX PERSONNAGES TRENDY ====================
 // À PLACER À LA FIN, AVANT LE console.log
 
